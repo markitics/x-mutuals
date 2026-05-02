@@ -8,6 +8,9 @@
     "enabled": true,
     "head_sampling_rate": 1
   },
+  "kv_namespaces": [
+    { "binding": "CACHE", "id": "d6ef20f3129c45098ac1ec73fd9a795c" }
+  ],
   "routes": [
     { "pattern": "mutuals.markmoriarty.com", "custom_domain": true }
   ]
