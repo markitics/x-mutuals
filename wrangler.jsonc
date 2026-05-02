@@ -1,5 +1,6 @@
 {
   "name": "true-mutuals",
+  "account_id": "a139381edda59e39115f93920d1569fd",
   "main": "src/index.ts",
   "compatibility_date": "2025-03-07",
   "compatibility_flags": ["nodejs_compat"],
