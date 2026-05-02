@@ -1,0 +1,27 @@
+# secrets
+.env
+.env.local
+.env.*.local
+
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# build output
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+
+# misc
+*.log
+matches.json
