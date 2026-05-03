@@ -711,7 +711,7 @@ function renderResult(data) {
       if(u.tweets) chips.push('<span class="chip"><b>'+fmt(u.tweets)+'</b> tweets</span>');
       if(u.joinedAt) chips.push('<span class="chip">Joined <b>'+fmtDate(u.joinedAt)+'</b></span>');
       if(u.location) chips.push('<span class="chip">'+esc(u.location)+'</span>');
-      if(u.website) chips.push('<span class="chip"><a href="'+esc(u.website)+'" target="_blank" rel="noopener" style="color:inherit">'+esc(u.website.replace(/^https?:\/\//,'').slice(0,30))+'</a></span>');
+      if(u.website) { var display = u.website.split('://').pop() || u.website; display = display.slice(0,30); chips.push('<span class="chip"><a href="'+esc(u.website)+'" target="_blank" rel="noopener" style="color:inherit">'+esc(display)+'</a></span>'); }
       return '<div class="card">'+
         (u.avatar?'<img class="avatar" src="'+esc(u.avatar.replace('_normal','_bigger'))+'" loading="lazy">':'<div class="avatar"></div>')+
         '<div class="info">'+
